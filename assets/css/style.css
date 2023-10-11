@@ -107,6 +107,7 @@ li {
 /* common style start */
 .white-font { color: #fff; }
 .caps-first { text-transform: capitalize; }
+.html-scroll { overflow-y: hidden; }
 /* common style end */
 
 /*=================================
