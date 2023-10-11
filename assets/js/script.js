@@ -4,7 +4,7 @@ const article = document.querySelectorAll('.content-container'),
   closebtn = document.querySelector('.btn'),
   display = document.querySelector('.content'),
   html = document.querySelector('html');
- 
+  
 
 
 article.forEach((art, index) => {
@@ -24,12 +24,14 @@ closebtn.addEventListener('click', () => {
   html.classList.remove('html-scroll')
 })
 
-display.addEventListener('click', () => {
+modal.addEventListener('click', () => {
   modal.classList.add('hidden')
   html.classList.remove('html-scroll')
 })
 
-
+display.addEventListener('click', (event) => {
+  event.stopPropagation();
+})
 
 
 
