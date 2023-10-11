@@ -112,7 +112,11 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header { background: #000; }
+header { 
+  margin-bottom: 20px;
+  background: #000; 
+}
+
 header .wrapper { width: 100%; }
 h1 {
   padding: 10px;
@@ -154,23 +158,53 @@ figcaption {
 
 /* section container style end */
 
+/* modal section style start */
+
+main .modal.hidden { display: none; }
+.active { display: block; }
+
+.modal { 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(0,0,0,0.4);
+ }
+
+.content {
+  width: 19%;
+  height: 50%;
+  transform: translate(213%, 25%);
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn span {
+  padding: 5px;
+  margin-left: 93%;
+  text-indent: -9999px;
+  float: left;
+}
+
+.btn span::before {
+  transform: rotateZ(45deg);
+  content: "\2b";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* modal section style end */
+
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
