@@ -108,6 +108,13 @@ li {
 .white-font { color: #fff; }
 .caps-first { text-transform: capitalize; }
 .html-scroll { overflow-y: hidden; }
+
+:root {
+  --black: #000;
+  --darkYellow: #DAA520;
+  --darkGreen: #176801;
+  --white: #fff;
+}
 /* common style end */
 
 /*=================================
@@ -115,7 +122,7 @@ li {
 =================================*/
 header { 
   margin-bottom: 20px;
-  background: #000; 
+  background: var(--black); 
 }
 
 header .wrapper { width: 100%; }
@@ -153,8 +160,8 @@ figcaption {
   padding: 10px;
   text-align: center; 
   font-size: 18px;
-  background: #DAA520;
-  color: #176801;
+  background: var(--darkYellow);
+  color: var(--darkGreen);
 }
 
 /* section container style end */
@@ -171,32 +178,32 @@ main .modal.hidden { display: none; }
   display: flex;
   flex-direction: column;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0,0,0,0.4);
  }
 
 .content {
   width: 19%;
-  height: 50%;
-  transform: translate(213%, 25%);
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
 }
 
 .btn span {
   padding: 5px;
-  margin-left: 93%;
-  text-indent: -9999px;
-  float: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
 }
 
 .btn span::before {
   transform: rotateZ(45deg);
   content: "\2b";
   font-family: "fontAwesome";
-  text-indent: 0;
   float: left;
   font-size: 60px;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
 }
 

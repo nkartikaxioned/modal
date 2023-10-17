@@ -15,9 +15,7 @@ article.forEach((art, index) => {
   })
 })
 
-function removeHidden() {
-  modal.classList.remove('hidden')
-}
+function removeHidden() { modal.classList.remove('hidden') }
 
 closebtn.addEventListener('click', () => {
   modal.classList.add('hidden')
@@ -29,9 +27,7 @@ modal.addEventListener('click', () => {
   html.classList.remove('html-scroll')
 })
 
-display.addEventListener('click', (event) => {
-  event.stopPropagation();
-})
+display.addEventListener('click', (event) => { event.stopPropagation(); })
 
 
 
